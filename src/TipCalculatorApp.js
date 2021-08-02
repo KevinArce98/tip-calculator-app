@@ -1,3 +1,4 @@
+import './assets/scss//tailwind.output.scss';
 import './assets/scss/global.scss';
 
 const TipCalculatorApp = () => {
