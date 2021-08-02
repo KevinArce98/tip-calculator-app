@@ -64,13 +64,13 @@ const Form = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="form-group mb-8">
+            <div className="form-group mb-3 md:mb-8">
                 <p className="mb-3">Bill</p>
                 <TextField icon={dollar} placeholder="0" value={data.bill} onChange={handleChange} name="bill" />
             </div>
-            <div className="form-group mb-8">
+            <div className="form-group mb-3 md:mb-8">
                 <p className="mb-3">Select tip %</p>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                     {
                         percentages.map(percentage => (
                             <Button
@@ -89,12 +89,12 @@ const Form = () => {
                     />
                 </div>
             </div>
-            <div className="form-group mb-8">
-                <div className="grid grid-cols-2 mb-3 gap-1">
+            <div className="form-group mb-3 md:mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 mb-3 gap-1">
                     <p>Number of people</p>
                     {
                         errors['people'] &&
-                        <p className="text-red-500 text-right">{errors['people']}</p>
+                        <p className="text-red-500 md:text-right">{errors['people']}</p>
                     }
                 </div>
                 <TextField
