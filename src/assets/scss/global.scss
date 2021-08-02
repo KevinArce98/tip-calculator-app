@@ -1,0 +1,106 @@
+@import 'variables';
+
+body {
+    height: 100vh;
+
+    #root {
+        height: 100vh;
+
+        .bg-index {
+            background-color: $light-grayish-cyan;
+            color: $dark-grayish-cyan;
+
+            .card {
+                font-family: 'SpaceMono';
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.text-field {
+    .text-field-icon {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        margin-left: 12px;
+    }
+
+    input {
+        font-size: $font-size-form-inputs;
+        background-color: $light-grayish-cyan-inputs;
+        color: $very-dark-cyan;
+        font-weight: bold;
+      
+
+        &:focus-visible{
+            outline-color: $strong-cyan;
+        }
+
+        &.error {
+            outline-width: 1px;
+            outline-style: auto;
+            outline-color: $error;
+
+        }
+
+    }
+}
+
+
+.btn{
+    font-size: 20px;
+
+    &.btn-dark{
+        background-color: $very-dark-cyan;
+        color: white;
+        font-weight: bold;
+
+        &.active{
+            background-color: $strong-cyan;
+        }
+    }
+
+    &.btn-light{
+        background-color: $strong-cyan;
+        color: $very-dark-cyan;
+        font-weight: bold;
+
+        &.active{
+            background-color: $strong-cyan;
+        }
+
+        &:disabled{
+            background-color: rgba($color: $strong-cyan, $alpha: 0.2);
+            cursor: not-allowed;
+        }
+    }
+
+    &:hover{
+        background-color: $light-grayish-cyan-hover;
+        color: $very-dark-cyan;
+    }
+}
+
+
+.totals{
+    background-color: $very-dark-cyan;
+
+    .total{
+        .subtitle{
+            font-style: italic;
+        }
+
+        .value{
+            color: $strong-cyan;
+            font-size: 40px;
+        }
+    }
+}
