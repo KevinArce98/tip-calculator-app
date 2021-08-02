@@ -32,7 +32,7 @@ const Totals = () => {
     }
 
     return (
-        <div className="totals rounded-xl px-5 py-5 md:p-10">
+        <div className="totals rounded-xl p-5 md:p-10">
             <TotalAmount amount={getTipAmountPerPerson()} title="Tip Amount" subtitle="/ person" />
             <TotalAmount amount={getTotalPerPerson()} title="Total" subtitle="/ person" />
 
