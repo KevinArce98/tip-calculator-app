@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kevinarce98.github.io/tip-calculator-app",
   "name": "tip-calculator-app",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:tailwind": "postcss src/assets/scss/tailwind.scss -o src/assets/scss/tailwind.output.scss"
+    "build:tailwind": "postcss src/assets/scss/tailwind.scss -o src/assets/scss/tailwind.output.scss",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
+    "gh-pages": "^3.2.3",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.7"
   }
