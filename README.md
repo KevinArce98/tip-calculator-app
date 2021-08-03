@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Demo](https://kevinarce98.github.io/tip-calculator-app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/reactjs-using-scss-and-tailwind-IJ7iUc1BH)
+- Live Site URL: [Demo](https://kevinarce98.github.io/tip-calculator-app/)
 
 ## My process
 
